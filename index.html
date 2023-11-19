@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section class="sec1">
+        <div class="container">
+            <h2 class="section-title">Project with Scroll Reval</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="./Images/wallpaperflare.com_wallpaper.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Breaking Bad</h3>
+                    <p>"Breaking Bad" is an American television series that originally aired on AMC from January 20, 2008, to September 29, 2013. Created by Vince Gilligan, the show consists of five seasons with a total of 62 episodes. The series received critical acclaim and is often regarded as one of the greatest television shows of all time.</p>
+
+                </div>
+            </div>
+                <div class="media-icons">
+                    <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="container">
+            <h3 class="section-title">Sec movie</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="./Images/2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Game of thrones</h4>
+                    <p>
+                        "Game of Thrones" is an epic fantasy television series based on the "A Song of Ice and Fire" novels by George R.R. Martin. The show was created by David Benioff and D.B. Weiss and premiered on HBO on April 17, 2011. It ran for eight seasons, concluding with its final episode on May 19, 2019.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="container">
+            <h3 class="section-title">Third morvie</h3>
+                <div class="content">
+                    <div class="media-info">
+                    <li><a href="#" ><i class="fab fa-facebook"></i>Faceboko</a></li>
+                    <li><a href="#" ><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#" ><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#" ><i class="fab fa-discord"></i>Discord</a></li>
+                    <li><a href="#" ><i class="fab fa-linkedin"></i>Lindken</a></li>
+                    </div>
+                    <div class="image">
+                        <img src="./Images/prison-break-wallpaper-preview.jpg" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+</body>
+<script src="./js/main.js"></script>
+<script>ScrollReveal(
+    {
+        // reset:true,
+        distance :"60px",
+        duration:2500,
+        delay:400
+});
+ScrollReveal().reveal('.section-title', { delay: 500,origin:"left" });
+ScrollReveal().reveal('.sec1 .image', { delay: 600,origin: "bottom" });
+ScrollReveal().reveal('.text-box', { delay: 700,origin: "right" });
+ScrollReveal().reveal('.media-icons i', { delay: 500,origin: "bottom",interval:200 });
+ScrollReveal().reveal('.sec2 .image, .sec3 .image', { delay: 500,origin: "top" });
+ScrollReveal().reveal('.media-info i', { delay: 500,origin: "left" ,interval:200 });
+</script>
+</html>
